@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Boutique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>☕<span>Rawaah</span>Coffee<span>Boutique</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Coffee-Selection.html">Coffee-Selection</a></li>
+                <li><a href="Brewing-Equipment.html">Brewing-Equipment</a></li>
+                 <li><a href="shopping-cart.html">Shopping-Cart</a></li> 
+                <li><a href="Events-Workshops.html">Events-Workshops</a></li>
+                <li><a href="Special-Offers.html">Special-Offers</a></li>
+            </ul>
+        </nav>
+        <a href="shopping-cart.html">
+            <div class="cart">
+
+                <img src="Source/cart-icon.jpg" alt="Shopping Cart" width="30" height="30">
+                <span id="cart-count">0</span>
+
+            </div>
+        </a>
+    </header>
+
+
+    <div class="body-container">
+        <div class="main-container">
+            <div class="left-section">
+                <h1>Welcome</h1>
+                <h3>to Rawaa Coffee Shop!</h3>
+            </div>
+            <div class="right-section">
+                <h1>Explore</h1>
+                <p>"Explore our unique coffee <br> innovations, where every <br> cup tells a story of love <br> and
+                    perfection."</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <article>
+            <h2 class="boxed-text">Our Coffee Selection</h2>
+
+            <section class="coffee-list">
+                <div class="coffee-item">
+                    <img src="Source/hot-chocolate.jpg" alt="hot-chocolate">
+                    <h3>hot-chocolate</h3>
+                    <p class="price">$3.00</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/cappuccino.png" alt="cappuccino">
+                    <h3>cappuccino</h3>
+                    <p class="price">$2.00</p>
+                    <button onclick="addToCart(2)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/Espresso.jpg" alt="espresso">
+                    <h3>Espresso</h3>
+                    <p class="price">$3.50</p>
+                    <button onclick="addToCart(3)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/latte1.jpg" alt="latte">
+                    <h3>latte</h3>
+                    <p class="price">$2.50</p>
+                    <button onclick="addToCart(4)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/iced-latte.jpg" alt="iced-latte">
+                    <h3>iced-latte</h3>
+                    <p class="price">$4.00</p>
+                    <button onclick="addToCart(5)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/iced-mochab1.webp" alt="iced-mochab1">
+                    <h3>Iced-mocha</h3>
+                    <p class="price">$4.50</p>
+                    <button onclick="addToCart(6)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/caramel-macchiato.jpg" alt="caramel-macchiato">
+                    <h3>caramel-macchiato</h3>
+                    <p class="price">$5.00</p>
+                    <button onclick="addToCart(7)">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Source/frappuccino.jpg" alt="frappuccino">
+                    <h3>frappuccino</h3>
+                    <p class="price">$5.50</p>
+                    <button onclick="addToCart(8)">Add to Cart</button>
+                </div>
+            </section>
+        </article>
+
+
+
+        <main>
+            <h2 class="boxed-text">Our Brewing Equipment</h2>
+            <section class="equipment-list">
+                <div class="equipment-item">
+                    <img src="Source/French-Press.jpg" alt="French Press">
+                    <h3>French Press</h3>
+                    <p class="description">A traditional brewing technique producing a coffee that is full-bodied and
+                        rich.
+                    </p>
+                    <p class="tips">Tip: For best results, use coffee that has been coarsely ground..</p>
+                </div>
+
+                <div class="equipment-item">
+                    <img src="Source/Coffee-Grinder.jpg" alt="Coffee Grinder">
+                    <h3>Coffee Grinder</h3>
+                    <p class="description">Discover the ideal grind size for your coffee-brewing technique..</p>
+                    <p class="tips">Tip:Regularly cleaning your grinder gives consistent results..</p>
+                </div>
+
+                <div class="equipment-item">
+                    <img src="Source/Espresso-Machine.jpg" alt="Espresso Machine">
+                    <h3>Espresso Machine</h3>
+                    <p class="description">Make espresso drinks at home that equal those of a barista..</p>
+                    <p class="tips">Tip: For the best processing, preheat the machines..</p>
+                </div>
+
+                <div class="equipment-item">
+                    <img src="Source/Pour-Over.jpg" alt="Pour Over">
+                    <h3>Pour Over</h3>
+                    <p class="description">A delicate brewing technique that produces a clear and tasty cup.</p>
+                    <p class="tips">Tip: For even processing, pour water in a circular motion..</p>
+                </div>
+            </section>
+        </main>
+
+
+
+        <h2 class="boxed-text">Upcoming promotions</h2>
+        <div class="promotions">
+            <div class="promo">
+                <h3>25% OFF Your First Order</h3>
+                <button onclick="showForm('discount')">Subscribe Now</button>
+            </div>
+            <div class="promo">
+                <h3>Refer a Friend & Get 1 week Free</h3>
+                <p>Refer a friend to any of our subscription plans, and you'll be rewarded with a week of coffee on us!</p>
+                <button onclick="showForm('referral')">Refer a Friend</button>
+            </div>
+            <div class="promo">
+                <h3>Free Delivery for 1 Month</h3>
+                <button onclick="showForm('delivery')">Start Subscription</button>
+            </div>
+        </div>
+    
+        
+        <div id="form-discount" class="form-container">
+            <h2>Register for 25% OFF</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required placeholder="Enter Your First Name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required placeholder="Enter Your Last Name">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    
+        <div id="form-referral" class="form-container">
+            <h2>Refer a Friend</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label for="first-name-1">Your First Name:</label>
+                <input type="text" id="first-name-1" name="first-name" required placeholder="Enter Your First Name">
+                <label for="last-name-1">Your Last Name:</label>
+                <input type="text" id="last-name-1" name="last-name" required placeholder="Enter Your Last Name">
+                <label for="email-1">Your Email Address:</label>
+                <input type="email" id="email-1" name="email" required placeholder="Enter Your Email">
+                <button type="submit">Refer</button>
+            </form>
+        </div>
+    
+        <div id="form-delivery" class="form-container">
+            <h2>Start Free Delivery Subscription</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label for="first-name-2">First Name:</label>
+                <input type="text" id="first-name-2" name="first-name" required placeholder="Enter Your First Name">
+                <label for="last-name-2">Last Name:</label>
+                <input type="text" id="last-name-2" name="last-name" required placeholder="Enter Your Last Name">
+                <label for="email-2">Email Address:</label>
+                <input type="email" id="email-2" name="email" required placeholder="Enter Your Email">
+                <button type="submit">Start</button>
+            </form>
+        </div>
+
+        
+        <section id="special-offers" class="special-offers-section">
+            <h2>Special Offers</h2>
+            <div class="offers-container">
+                <div class="offer-item">
+                    <img src="Source/hot-chocolate.jpg" alt="Hot Chocolate Special">
+                    <h3>Hot Chocolate Special</h3>
+                    <p>Buy 2 Hot Chocolates and Get 1 Free!</p>
+                    <button onclick="addToCart('Hot-Chocolate')">Shop Now</button>
+                </div>
+        
+                <div class="offer-item">
+                    <img src="Source/iced-latte.jpg" alt="Iced Latte Discount">
+                    <h3>Iced Latte Discount</h3>
+                    <p>Enjoy 20% OFF on all Iced Lattes this week!</p>
+                    <button onclick="addToCart('Iced-Latte')">Grab the Offer</button>
+                </div>
+        
+                <div class="offer-item">
+                    <img src="Source/Espresso.jpg" alt="Espresso Loyalty Reward">
+                    <h3>Espresso Loyalty Reward</h3>
+                    <p>Get a free Espresso after your 5th purchase!</p>
+                    <button onclick="addToCart('Espresso')">Join Now</button>
+                </div>
+            </div>
+        </section>
+          
+        
+        
+    
+        
+    <footer>
+        <p>&copy; copyright 2024.Rawaa Coffee Boutique. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/share/9JurFuUipEQqELmr/?mibextid=wwXIfr" target="_blank"
+                aria-label="Facebook">
+                <img src="Source/Facebook-icon.jpg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/cooffe_boutique7/profilecard/?igsh=aTBqcDQ0MnJqeTNw" target="_blank"
+                aria-label="Instagram">
+                <img src="Source/Instagram-icon.jpg" alt="Instagram" width="30" height="30">
+            </a>
+        </div>
+    </footer>
+
+    <script src="shoppingCart.js"></script>
+    <script src="Events.js"></script>
+</body>
+
+</html>

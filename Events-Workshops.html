@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Workshops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="boxed-text">Upcoming promotions</h2>
+    <div class="promotions">
+        <div class="promo">
+            <h3>25% OFF Your First Order</h3>
+            <button onclick="showForm('discount')">Subscribe Now</button>
+        </div>
+        <div class="promo">
+            <h3>Refer a Friend & Get 1 week Free</h3>
+            <p>Refer a friend to any of our subscription plans, and you'll be rewarded with a week of coffee on us!</p>
+            <button onclick="showForm('referral')">Refer a Friend</button>
+        </div>
+        <div class="promo">
+            <h3>Free Delivery for 1 Month</h3>
+            <button onclick="showForm('delivery')">Start Subscription</button>
+        </div>
+    </div>
+
+    
+    <div id="form-discount" class="form-container">
+        <h2>Register for 25% OFF</h2>
+        <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required placeholder="Enter Your First Name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required placeholder="Enter Your Last Name">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div id="form-referral" class="form-container">
+        <h2>Refer a Friend</h2>
+        <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="first-name-1">Your First Name:</label>
+            <input type="text" id="first-name-1" name="first-name" required placeholder="Enter Your First Name">
+            <label for="last-name-1">Your Last Name:</label>
+            <input type="text" id="last-name-1" name="last-name" required placeholder="Enter Your Last Name">
+            <label for="email-1">Your Email Address:</label>
+            <input type="email" id="email-1" name="email" required placeholder="Enter Your Email">
+            <button type="submit">Refer</button>
+        </form>
+    </div>
+
+    <div id="form-delivery" class="form-container">
+        <h2>Start Free Delivery Subscription</h2>
+        <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="first-name-2">First Name:</label>
+            <input type="text" id="first-name-2" name="first-name" required placeholder="Enter Your First Name">
+            <label for="last-name-2">Last Name:</label>
+            <input type="text" id="last-name-2" name="last-name" required placeholder="Enter Your Last Name">
+            <label for="email-2">Email Address:</label>
+            <input type="email" id="email-2" name="email" required placeholder="Enter Your Email">
+            <button type="submit">Start</button>
+        </form>
+    </div>
+
+    
+    
+</body>
+</html>
